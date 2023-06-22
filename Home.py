@@ -37,6 +37,11 @@ with sidebar_column[1]:
     st.write("English")
     st.write("Mandarin")
 
+    empty_line(6)
+    with open("TAN KAI SIN_ DATA ENGINEER.pdf", "rb") as file:
+        file_bytes = file.read()
+        st.download_button("Resume Download", data=file_bytes, file_name="TAN KAI SIN_ DATA ENGINEER.pdf")
+
 st.header("Work Experience")
 st.write("---")
 col1, col2 = st.columns([1, 3])
