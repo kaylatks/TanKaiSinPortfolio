@@ -37,28 +37,28 @@ link_html2 = f'<a href="{app_url2}" target="_blank">ToDo App</a>'
 # Display the link
 st.components.v1.html(link_html2, height=30)
 
-st.write(f"""
-3. Two Sums
-    - This function is used to find the index of sum up value
-    eg: list: [1,4,8]
-        target: 9
-        index of sum up value: [0,2]
-
-**Tip for play**
-
-i.   Enter the list number seperated by spaces
-     eg: 1 4 8
-
-ii.  Enter target value, a number to total up
-     eg: 9
-
-iii. display the result, the index of 1 and 8
-""")
-
-
-command = subprocess.call(['python', 'TwoSums.py'])
-# Create a clickable link using HTML
-link = f'<a href="#" onclick="window.open(\'data:application/octet-stream,{command}\');">Two Sums</a>'
-
-# Display the clickable link in Streamlit
-st.markdown(link, unsafe_allow_html=True)
+# st.write(f"""
+# 3. Two Sums
+#     - This function is used to find the index of sum up value
+#     eg: list: [1,4,8]
+#         target: 9
+#         index of sum up value: [0,2]
+#
+# **Tip for play**
+#
+# i.   Enter the list number seperated by spaces
+#      eg: 1 4 8
+#
+# ii.  Enter target value, a number to total up
+#      eg: 9
+#
+# iii. display the result, the index of 1 and 8
+# """)
+#
+#
+# command = subprocess.call(['python', 'TwoSums.py'])
+# # Create a clickable link using HTML
+# link = f'<a href="#" onclick="window.open(\'data:application/octet-stream,{command}\');">Two Sums</a>'
+#
+# # Display the clickable link in Streamlit
+# st.markdown(link, unsafe_allow_html=True)
