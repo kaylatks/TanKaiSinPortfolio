@@ -38,9 +38,9 @@ with sidebar_column[1]:
     st.write("Mandarin")
 
     empty_line(6)
-    with open("TAN KAI SIN_ DATA ENGINEER.pdf", "rb") as file:
+    with open("TAN_KAI_SIN_RESUME.pdf", "rb") as file:
         file_bytes = file.read()
-        st.download_button("Resume Download", data=file_bytes, file_name="TAN KAI SIN_ DATA ENGINEER.pdf")
+        st.download_button("Resume Download", data=file_bytes, file_name="TAN_KAI_SIN_RESUME.pdf")
 
 st.header("Work Experience")
 st.write("---")
@@ -48,76 +48,101 @@ col1, col2 = st.columns([1, 3])
 
 with col1:
     st.subheader("Data Engineer")
-    st.write("Sep 2020 - Present")
-    st.markdown("_Nettium Sdn. Bhd._")
+    st.write("Oct 2024 - Present")
+    st.markdown("_Livein Sdn. Bhd._")
 
     empty_line(6)
+
+    st.subheader("Data Engineer")
+    st.write("Oct 2023 - Sep 2024")
+    st.markdown("_RHB Bank Berhad_")
+
+    empty_line(6)
+
+    st.subheader("Data Engineer")
+    st.write("Sep 2020 - Sep 2023")
+    st.markdown("_Nettium Sdn. Bhd._")
+
+    empty_line(8)
 
     st.subheader("Technical Specialist")
     st.write("March 2020 – Sept 2020")
     st.markdown("_MiHCM Asia Sdn Bhd_")
 
-    empty_line(8)
+    empty_line(6)
 
     st.subheader("Data Coordinator")
     st.write("March 2018 – Feb 2020")
     st.markdown("_QS Enrolment Solutions Sdn.Bhd_")
 
-    empty_line(6)
+    empty_line(5)
 
     st.subheader("SAP Technical Consultant Intern ")
     st.write("Feb 2017 – July 2017")
     st.markdown("_Aspert Innovations Sdn Bhd_")
 
 with col2:
-    content = f"""
+    content6 = f"""
 
-    •	Write the script for web scraping and automation on the task process of doing data reconciliation by using Microsoft Excel VBA Selenium.
+            •	Design and implement an ETL pipeline to seamlessly integrate data into a data warehouse using AWS Lambda.
 
-    •	Assisted in creating the report by using SSRS
+            •	Design and develop detailed summary reports using Python and PostgreSQL, and implement an automated solution to replace traditional manual processes, ensuring data integrity, accuracy, and optimized performance.
 
-    •	Provide UAT test when new product launched
+            •	Develop an advanced web scraping solution using Python, BeautifulSoup, and Selenium for efficient data extraction and analysis.
 
-    •	Provide support to stakeholder when the issue arises (eg: product issue, report error, data not tally)
+            •	Technical Skills:  PostgreSQL, Python, Pandas, Beautiful Soup, AWS Lambda, Microsoft Excel
 
-    """
+            """
 
-    st.write(content)
+    st.write(content6)
+
+    empty_line(3)
+
+    content5 = f"""
+
+        •	Drove development of the Enterprise Data Lake (EDL) data pipeline.
+
+        •	Supported and prepared SIT and UAT testing of the pipeline, ensuring data integrity and adherence to business requirements.
+
+        •	Facilitated efficient data access for analytics by supporting ad-hoc SAS tasks and data ingestion into Hive.
+
+        •	Technical Skills:  Python, Pyspark, Apache Nifi, Hadoop, SAS, HDFS, Bitbucket Version Control
+
+        """
+
+    st.write(content5)
 
     empty_line(4)
 
-    content2 = f"""
+    content4 = f"""
 
-    •	Main responsible in data migration and support client when issue arise.
-        
-    •	Assisted in creating SQL query script for data migration and data accuracy check in Remote Test Server.
-        
-    •	Assisted in creating system report by using SSRS.
-        
-    •	Assisted in testing application to find the bug and data accuracy.
-        
-    •	Provide support to client when the issue arises (eg: report error, data isn’t show up in application).
-        
-    •	Application Used: SSRS, MSSQL 2012 and MSSQL 2017, Remote Test Server
+    •	Automated manual data processing pipeline (login, web scraping, cleansing, tallying) using Microsoft Excel VBA & Selenium, reducing time from 1 hour to 15 minutes (75% reduction).
+
+    •	Developed Excel macros to automate data manipulation tasks (VLOOKUP, filtering, copying, importing).
+
+    •	Implemented Tesseract OCR to automate captcha bypass for login.
+
+    •	Contributed to report creation using SSRS and provided UAT testing & user support.
+    
+    •	Technical Skills:  SSRS, MSSQL, Microsoft Excel VBA, Web Scraping
 
     """
 
-    st.write(content2)
+    st.write(content4)
 
     empty_line(4)
 
     content3 = f"""
 
-    •	Main responsible is to ensure client’s data is updated and correct before upload into CRM.
+    •	Managed data migration processes and provided client assistance for resolving issues.
         
-    •	Assisted in creating Macro to do data cleansing in Microsoft Excel. Example Macro that perform auto V-look up, if else conditions, and data formatting.
+    •	Developed SQL queries for data migration and data integrity checks in test environments.
         
-    •	Provide support during issues arise related to incorrect data in CRM.
+    •	Contributed to SSRS report creation to enhance data visualization and analysis.
         
-    •	Knowledge on Robotics Process Automation.
-        
-    •	Application Used: Microsoft Excel 2016, CRM
-
+    •	Provided responsive client support for resolving issues like report errors and data inconsistencies.
+    
+    •	Technical Skills: MSSQL, SSRS, data migration
 
     """
 
@@ -125,7 +150,24 @@ with col2:
 
     empty_line(4)
 
-    content4 = f"""
+    content2 = f"""
+
+    •	Ensured client data accuracy and completeness before CRM upload.
+        
+    •	Developed Excel macros using VLOOKUP, conditional logic, and formatting to streamline data cleaning.
+        
+    •	Provided technical assistance for CRM data accuracy issues.
+        
+    •	Technical Skills: Microsoft Excel VBA, ETL process
+
+
+    """
+
+    st.write(content2)
+
+    empty_line(4)
+
+    content1 = f"""
     •	Creating stored procedure for Crystal Report with SQL Server 2014. 
     
     •	Assist in develop automation function for report format conversion with VB.NET
@@ -135,7 +177,7 @@ with col2:
     •	Application Used: MS SQL Server 2014, MS Visual Studio 2012, SAP Crystal Report
 
     """
-    st.write(content4)
+    st.write(content1)
 
 empty_line(5)
 st.header("Education")
@@ -151,11 +193,13 @@ st.write("Tunku Abdul Rahman University College")
 
 st.markdown("<hr style='border-top: 1px solid lightgray;'>", unsafe_allow_html=True)
 
-st.header("Computer Skills")
+st.header("Technical Skills")
 st_star_rating(label="SQL", maxValue=5, defaultValue=4, key="rating", read_only=True)
 st_star_rating(label="Microsoft Excel", maxValue=5, defaultValue=5, key="rating1", read_only=True)
 st_star_rating(label="Microsoft Excel VBA", maxValue=5, defaultValue=5, key="rating2", read_only=True)
-st_star_rating(label="Python", maxValue=5, defaultValue=2, key="rating3", read_only=True)
+st_star_rating(label="Python", maxValue=5, defaultValue=3, key="rating3", read_only=True)
+st_star_rating(label="HDFS", maxValue=5, defaultValue=3, key="rating4", read_only=True)
+st_star_rating(label="Apache Nifi", maxValue=5, defaultValue=3, key="rating5", read_only=True)
 
 
 
