@@ -36,8 +36,9 @@ with sidebar_column[1]:
     empty_line(5)
     st.write("English")
     st.write("Mandarin")
-
     empty_line(6)
+
+
     with open("TAN_KAI_SIN_RESUME.pdf", "rb") as file:
         file_bytes = file.read()
         st.download_button("Resume Download", data=file_bytes, file_name="TAN_KAI_SIN_RESUME.pdf")
