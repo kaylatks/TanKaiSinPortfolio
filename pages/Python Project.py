@@ -37,6 +37,21 @@ link_html2 = f'<a href="{app_url2}" target="_blank">ToDo App</a>'
 # Display the link
 st.components.v1.html(link_html2, height=30)
 
+st.write(f"""
+3. GitHub
+    - The project code checked in to GitHub.
+
+""")
+
+# URL of the Streamlit app you want to link to
+app_url3 = "https://github.com/kaylatks"
+
+# Generate an HTML link
+link_html3 = f'<a href="{app_url3}" target="_blank">GitHub</a>'
+
+# Display the link
+st.components.v1.html(link_html3, height=30)
+
 # st.write(f"""
 # 3. Two Sums
 #     - This function is used to find the index of sum up value
