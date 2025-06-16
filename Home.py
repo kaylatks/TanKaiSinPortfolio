@@ -49,7 +49,7 @@ col1, col2 = st.columns([1, 3])
 
 with col1:
     st.subheader("Data Engineer")
-    st.write("Oct 2024 - Present")
+    st.write("Oct 2024 - Apr 2025")
     st.markdown("_Livein Sdn. Bhd._")
 
     empty_line(6)
